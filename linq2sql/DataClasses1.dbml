@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Adresar" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NISWS03\SQLEXPRESS;Initial Catalog=Adresar;Integrated Security=True" SettingsObjectName="linq2sql.Properties.Settings" SettingsPropertyName="AdresarConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.FizickaLica" Member="FizickaLicas">
+    <Type Name="FizickaLica">
+      <Column Name="IdFizickoLice" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ime" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prezime" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Adresa" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Telefon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="FizickaLica_Zaposleni" Member="Zaposlenis" ThisKey="IdFizickoLice" OtherKey="idFizickoLice" Type="Zaposleni" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zaposleni" Member="Zaposlenis">
+    <Type Name="Zaposleni">
+      <Column Name="IdZaposleni" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idFizickoLice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GodinaStaza" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="FizickaLica_Zaposleni" Member="FizickaLica" ThisKey="idFizickoLice" OtherKey="IdFizickoLice" Type="FizickaLica" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

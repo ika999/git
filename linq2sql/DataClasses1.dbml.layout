@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="659f5caa-95aa-4d80-b84d-ee376430cdaa" absoluteBounds="0.75, 2.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClasses1DataContext/FizickaLica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6670c08-f129-431e-80e1-86037743a895" absoluteBounds="0.765, 2.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fd3bd2f-1b0a-401b-9202-da9c04dca422" absoluteBounds="5, 2.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClasses1DataContext/Zaposleni" />
+      <nestedChildShapes>
+        <elementListCompartment Id="70000436-d984-4d74-aea9-5eeb90514a3a" absoluteBounds="5.0150000000000006, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.06814697265625); (5 : 3.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/FizickaLica/FizickaLica_Zaposleni" />
+      <nodes>
+        <classShapeMoniker Id="659f5caa-95aa-4d80-b84d-ee376430cdaa" />
+        <classShapeMoniker Id="1fd3bd2f-1b0a-401b-9202-da9c04dca422" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
