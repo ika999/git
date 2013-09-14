@@ -7,15 +7,15 @@ namespace linq2sql
 {
     public class Class1
     {
-        //public void Linq76()
-        //{
-        //    List<Customer> customers = GetCustomerList();
+        public void Linq76()
+        {
+            //List<Customer> customers = GetCustomerList();
 
-        //    var orderCounts =
-        //        from c in customers
-        //        select new { c.CustomerID, OrderCount = c.Orders.Count() };
+            //var orderCounts =
+            //    from c in customers
+            //    select new { c.CustomerID, OrderCount = c.Orders.Count() };
 
-        //    ObjectDumper.Write(orderCounts);
-        //}
+            //ObjectDumper.Write(orderCounts);
+        }
     }
 }
